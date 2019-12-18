@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ED69962423AA9F97009F0E74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69962323AA9F97009F0E74 /* AppDelegate.swift */; };
 		ED69962623AA9F97009F0E74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69962523AA9F97009F0E74 /* SceneDelegate.swift */; };
-		ED69962823AA9F97009F0E74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED69962723AA9F97009F0E74 /* ViewController.swift */; };
 		ED69962B23AA9F97009F0E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED69962923AA9F97009F0E74 /* Main.storyboard */; };
 		ED69962D23AA9F9B009F0E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED69962C23AA9F9B009F0E74 /* Assets.xcassets */; };
 		ED69963023AA9F9B009F0E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED69962E23AA9F9B009F0E74 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		ED69962023AA9F97009F0E74 /* JournalRoundTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalRoundTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED69962323AA9F97009F0E74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED69962523AA9F97009F0E74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED69962723AA9F97009F0E74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED69962A23AA9F97009F0E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED69962C23AA9F9B009F0E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED69962F23AA9F9B009F0E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		ED69962223AA9F97009F0E74 /* JournalRoundTwo */ = {
 			isa = PBXGroup;
 			children = (
+				ED69963B23AAA0F6009F0E74 /* Models */,
+				ED69963A23AAA0F1009F0E74 /* ModelControllers */,
+				ED69963923AAA0ED009F0E74 /* ViewControllers */,
+				ED69963823AAA0E7009F0E74 /* Views */,
+				ED69963723AAA0D4009F0E74 /* Resources */,
+			);
+			path = JournalRoundTwo;
+			sourceTree = "<group>";
+		};
+		ED69963723AAA0D4009F0E74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ED69962323AA9F97009F0E74 /* AppDelegate.swift */,
 				ED69962523AA9F97009F0E74 /* SceneDelegate.swift */,
-				ED69962723AA9F97009F0E74 /* ViewController.swift */,
-				ED69962923AA9F97009F0E74 /* Main.storyboard */,
 				ED69962C23AA9F9B009F0E74 /* Assets.xcassets */,
 				ED69962E23AA9F9B009F0E74 /* LaunchScreen.storyboard */,
 				ED69963123AA9F9B009F0E74 /* Info.plist */,
 			);
-			path = JournalRoundTwo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED69963823AAA0E7009F0E74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED69962923AA9F97009F0E74 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED69963923AAA0ED009F0E74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED69963A23AAA0F1009F0E74 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		ED69963B23AAA0F6009F0E74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +175,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED69962823AA9F97009F0E74 /* ViewController.swift in Sources */,
 				ED69962423AA9F97009F0E74 /* AppDelegate.swift in Sources */,
 				ED69962623AA9F97009F0E74 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T4C65R2UFW;
-				INFOPLIST_FILE = JournalRoundTwo/Info.plist;
+				INFOPLIST_FILE = JournalRoundTwo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T4C65R2UFW;
-				INFOPLIST_FILE = JournalRoundTwo/Info.plist;
+				INFOPLIST_FILE = JournalRoundTwo/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
